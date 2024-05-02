@@ -1,0 +1,124 @@
+
+
+.product{
+    display: flex;
+    flex-direction: column;
+    /* width: 300px; */
+    background-color: var(--white);   
+    border: 0.1px solid var(--border-gray);
+    flex-basis: 300px;
+    flex-shrink: 1;
+    border-radius: 2px;
+    transition: all .4s ease-out;
+
+}
+
+.productImage{
+    position: relative;
+    width: 100%;
+    height: 360px;
+    transition: all .4s ease-out;
+    overflow: hidden;
+
+}
+
+.product:hover .productImage img{
+    z-index: 1;
+    width: 110%;
+    height: 110%;
+    transition: all .4s ease-out;
+    top: -5%;
+    left: -5%;
+}
+
+.product:hover .productDetails{
+    box-shadow: 0 0 30px 4px rgba(0, 0, 0, 0.2);
+    transition: all .2s linear;
+
+
+}
+
+.productImage img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .4s ease-out;
+
+}
+
+.productDetails{
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+    transition: all .2s linear;
+
+}
+
+.productTitle, .productPrice, .productOtherShortInfo{
+    font-weight: 500;
+    
+}
+
+
+.productTitle{
+    font-size: 1.6rem;
+    color: var(--dark-gray);
+
+}
+
+.product:hover .productTitle{
+    text-decoration: underline;
+    color:var(--black);
+}
+.productPrice{
+    font-size: 1.4rem;
+    color: var(--red);
+}
+
+.productOtherShortInfo{
+    display: flex;
+    color: var(--light-gray);
+    font-size: 1.4rem;
+    gap: 8px;
+    align-items: center;
+
+}
+
+.productIconStyles{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.productActionButtons{
+    display: flex;
+    gap: 5px;
+}
+
+.inStock, .outOfStock{
+    font-size: 1.4rem;
+    color: var(--white);
+    padding: 3px 8px;
+    border-radius: 100px;
+
+}
+
+.inStock{
+    background-color: var(--light-green);
+}
+
+.outOfStock{
+    background-color: var(--red);
+}
+/* 
+
+productTitle
+productOtherDetails
+productOtherShortInfo
+productPrice
+ */

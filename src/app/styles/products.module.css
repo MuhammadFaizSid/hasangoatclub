@@ -1,0 +1,24 @@
+.productsWrapper{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+}
+
+.productsWrapper h1{
+    font-size: 4rem;
+}
+
+
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    gap: 16px;
+    justify-content: center;
+    width: 80%;
+    
+}
+
